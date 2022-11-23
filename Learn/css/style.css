@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+}
+
+.wrapper {
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    background-color: rgb(58, 58, 246);
+    color: white;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: 600;
+}
+
+.wrapper .form {
+    padding: 20px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.wrapper .form .ai {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.wrapper .form .ai icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.wrapper .form .ai .msg {
+    max-width: 70%;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.wrapper .form .ai .msg p {
+    background-color: rgb(252, 189, 87);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+
+/*Fixed typing field*/
+
+.wrapper .field {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 5px 5px;
+    border-top: 1px solid rgb(253, 247, 247);
+}
+
+.wrapper .field .data {
+    height: 40px;
+    width: 400px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.wrapper .field .data input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0 80px 0 18px;
+    border-color: none;
+    transition: all 0.3 ease;
+}
+
+.wrapper .field .data input:focus {
+    border-color: rgb(16, 219, 9);
+}
+
+.data input:focus::placeholder {
+    opacity: 0.5;
+}
+
+.wrapper .field .data button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid pink;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    width: 50px;
+    background-color: pink;
+    transition: all 0.3 ease;
+    transform: translateY(-50%);
+}
+
+.wrapper .field .data input:valid~button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .form .user-inbox {
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.wrapper .form .user-inbox .msg p {
+    color: white;
+}
