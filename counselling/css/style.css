@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+    border-radius: 0;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+    border-radius: 0;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #021867;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+    ;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #08133a;
+    border: 3px solid #021867;
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3d3d3d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.signup-card {
+    padding: 25px;
+    background: #fff;
+    margin: 100px 0 0 0;
+}
+
+.card {
+    border-radius: 0 !important;
+}
+
+.card-header {
+    position: relative;
+    background-color: rgb(160, 156, 156);
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.main-wrapper {
+    margin: 70px 0 0 0;
+}
+
+.sidebar-wrapper,
+.right-panel,
+.card {
+    min-height: 800px;
+    height: auto;
+}
+
+.startup-txt {
+    padding: 320px 0 0 0;
+    color: #ddd;
+}
+
+.user-list-box {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+.user-list-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-list-box ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 10px 0 10px 10px;
+    background: #fff;
+}
+
+.user-list-box ul li a:hover {
+    text-decoration: none;
+    color: #021867;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 10px 0 10px 10px;
+    background: #eee;
+    transition: 0.3s;
+}
+
+.user-list-box ul li a img {
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+.user-list-box ul li a h6 {
+    padding: 5px 0 0 10px;
+}
+
+.user-list-box ul li a i {
+    color: #08c708;
+    position: absolute;
+    top: 38px;
+    left: 48px;
+}
+
+.offline {
+    color: rgba(255, 255, 255, 0.065) !important;
+}
+
+.card-header a {
+    text-decoration: none;
+    color: rgb(18, 17, 17);
+    float: right;
+}
+
+.chat-wrapper {
+    padding: 10px;
+    height: 380px;
+}
+
+.chat-body {
+    height: 370px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+
+/* ---------------- */
+
+.item-group-you {
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.item-group-you img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.text-message-you {
+    background: #f5f6fa;
+    padding: 20px;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* ---------------------- */
+
+.item-group-other {
+    flex-direction: row-reverse;
+    order: -1;
+    position: relative;
+    margin: 0px 0 30px 0;
+}
+
+.item-group-other img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.text-message-other {
+    background: #021867;
+    padding: 20px;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.message-to {
+    position: relative;
+}
+
+.message-to img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.message-to i {
+    color: #08c708;
+    position: absolute;
+    top: 28px;
+    left: 37px;
+}
+
+.message-to h6 {
+    padding: 7px 0 0 6px;
+}
+
+.message-to p {
+    position: absolute;
+    top: 28px;
+    left: 58px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.dropdown-toggle::after {
+    border-top: .0em solid !important;
+    border-right: .0em solid transparent !important;
+    border-bottom: 0 !important;
+    border-left: .0em solid transparent !important;
+}
+
+.time-track-you {
+    position: absolute;
+    font-size: 12px;
+    top: 64px;
+    left: 61px;
+}
+
+.time-track-other {
+    position: absolute;
+    font-size: 12px;
+    top: 64px;
+    text-align: right;
+    right: 62px;
+}
+
+.card-body {
+    height: 380px;
+}
+
+.chat-wrapper .chat-body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.chat-wrapper .chat-body {
+    /* background: url("../images/bg.jpg"); */
+    width: 100%;
+    overflow: auto;
+    padding: 15px;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}

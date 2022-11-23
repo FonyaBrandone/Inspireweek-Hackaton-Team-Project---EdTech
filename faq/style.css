@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+    color: white;
+    padding: auto;
+    padding-left: auto;
+    width: 100%;
+    background-color: rgb(36, 36, 35);
+    z-index: 1;
+    transition: 500ms ease;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 100ms ease-in;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    color: white;
+}
+
+.logo {
+    border: 2px pink;
+    border-radius: 2px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.topnav #myLinks a:hover {
+    background-color: rgb(252, 189, 87);
+    color: black;
+}
+
+.highlight {
+    width: 100vw;
+    height: 510px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 2px none;
+    border-top: pink;
+}
+
+.wikki-img {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.myrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Moving text animation*/
+
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.ml4 .letters {
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    top: 0.2em;
+    right: 0;
+    opacity: 0;
+}
+
+i,
+.bld {
+    font-size: 35px;
+    color: pink;
+}
+
+.span {
+    font-size: 25px;
+}
+
+.blds {
+    font-size: 23px;
+    color: pink;
+}
+
+a,
+li {
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#up-arrow {
+    background-color: rgb(35, 35, 63);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#up-arrow:hover {
+    color: rgb(35, 35, 63);
+    background-color: white;
+    border-radius: 3px;
+    transition: 500ms;
+}
+
+#mybtn:hover,
+#mybtn:focus,
+#mybtn:active {
+    background-color: none;
+    color: white;
+}
+
+.lead {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    margin-bottom: 30px;
+    padding: auto auto;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: pink;
+    color: black;
+    padding: 15px 20px;
+}
+
+#footer {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow-x: hidden;
+}
+
+.wikki-title {
+    font-size: 24px;
+}
+
+.imgs {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.lnk {
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+
+.lnk:hover {
+    color: white;
+}
+
+i {
+    font-size: 24px;
+}
+
+i:hover {
+    color: black;
+}
+
+#bot-screenshot {
+    height: 700px;
+    width: 100%;
+}
+
+.intro-desc {
+    margin-top: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.clear {
+    color: #021867;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.intro-img {
+    border-radius: 5px;
+    max-height: max-content;
+}
+
+.get {
+    width: 210px;
+    height: auto;
+}
+
+.part-1 {
+    display: block;
+    background-color: #021867;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.highlight-1 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.exp-1 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.8;
+    font-size: 18px;
+}
