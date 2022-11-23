@@ -4,7 +4,7 @@ Inspire week hackathon challenge 2022 team project repo for WikkiLearn Web Appli
 /*
 Team Members:
   Fonya Brandone
-  Wasou Jennifer
+  Wassou Jennifer
   Fredhack1
   Roger
   Teddy
