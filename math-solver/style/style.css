@@ -1,0 +1,263 @@
+.menu-container {
+    display: block;
+    position: fixed;
+    float: left;
+    left: 0px;
+    background-color: rgb(248, 51, 51);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 130px;
+    top: 0%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 6px;
+    margin-top: 3px;
+    background-color: rgb(250, 248, 248);
+    cursor: pointer;
+}
+
+.title {
+    float: right;
+    display: block;
+    color: white;
+    margin-right: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 2px 2px rgb(122, 119, 119);
+}
+
+input[type=text] {
+    width: 45%;
+    margin-top: 50px;
+    border: 2px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(37, 37, 37);
+    text-align: center;
+    height: 60px;
+    font-size: large;
+    border-color: rgb(248, 120, 120);
+    color: white;
+    margin-bottom: 25px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    border: 2px none;
+    border-radius: 35px;
+    color: #e2d4d4;
+    background-color: #050505;
+    font-size: large;
+    padding: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    width: 80%;
+    border-radius: 25px;
+}
+
+input[type=text]:hover {
+    border: none;
+    background-color: rgb(248, 51, 51);
+}
+
+
+/*RESPONSIVE MENU STYLES*/
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 50%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fcfafad8;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.5s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f01818;
+    font-size: 33px;
+}
+
+a:focus {
+    color: rgb(196, 110, 125);
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    font-size: 65px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    img {
+        width: 50%;
+        height: 6%;
+    }
+}
+
+.row {
+    box-shadow: 1px 1px 5px grey;
+    margin-left: 8%;
+}
+
+.row::after {
+    content: " ";
+    display: block;
+    clear: both;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.column {
+    width: 45%;
+    float: left;
+    padding: 7px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+img {
+    width: 80%;
+    height: 360px;
+    padding-top: 7%;
+    padding-left: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-left: 10%;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #050505;
+    margin-bottom: -50px;
+    margin-top: 20px;
+    display: block;
+    color: #f1f1f1;
+    padding: 10px;
+    font-size: larger;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.floating-div {
+    position: fixed;
+    z-index: 1;
+    display: block;
+    margin-right: auto;
+}
+
+.login-img {
+    width: 54px;
+    height: 54px;
+    display: block;
+    margin-right: auto;
+    bottom: 1px;
+    left: -50px;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.shop-img {
+    height: auto;
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    bottom: 30px;
+    left: -90px;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    margin-right: auto;
+    cursor: pointer;
+}

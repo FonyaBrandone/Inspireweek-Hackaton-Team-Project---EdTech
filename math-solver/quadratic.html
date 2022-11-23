@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/sections.css">
+    <script src="script/menu-nav.js"></script>
+    <link rel="shortcut icon" href="../assets/wikki.svg">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body style="background-image: url(images/a.jpg); background-size: cover;">
+    <center>
+        <button id="back" style="background-color:rgb(33, 33, 63); color:white;" class="btn mt-4"><i class="bi bi-arrow-left me-1"></i> Back</button>
+    </center>
+    <h2>Quadratic Equation</h2><br>
+    <p>These are mathematical equations of the Form: <span style="margin-left: 10px; font-size: 27px; color: red;"><span style="font-size: 35px;">a</span>X² + <span style="font-size: 30px;">b</span>X + <span style="font-size: 35px;">c</span></span>
+    </p>
+    <div class="formDiv">
+        <div name="form">
+            <label>a:</label><input type="number" name="a" id="a" value="form.a.value"><br>
+            <label>b:</label><input type="number" name="b" id="b" value="form.b.value"><br>
+            <label>c:</label><input type="number" name="c" id="c" value="form.c.value"><br><br><br>
+
+            <button onclick="quadraticFunction()">Results</button><br>
+            <label>X1:</label><input name="x1" id="x1"><br>
+            <label>X2:</label><input name="x2" id="x2"><br><br>
+            <button onclick="reset()" id="reset"></button><br>
+            <button onclick="resetInput()" id="reset2"></button><br>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('reset').innerHTML = "Reset Results";
+        document.getElementById('reset2').innerHTML = "Reset Inputs";
+        document.getElementById('x1').style.color = "blue";
+        document.getElementById('x2').style.color = "blue";
+        document.getElementById('x1').style.textAlign = "center";
+        document.getElementById('x2').style.textAlign = "center";
+
+        function quadraticFunction() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var c = document.getElementById('c').value;
+
+            root = (b * b) - 4 * a * c;
+            div = 2 * a;
+            x1 = (-b + (Math.sqrt(root))) / div;
+            x2 = (-b - (Math.sqrt(root))) / div;
+
+            if (root < 1) {
+                var im = -1 * root
+
+                document.getElementById('x1').value = '(' + '-' + b + "" + ' +' + Math.sqrt(im) + 'i' + ')' + '/' + div;
+                document.getElementById('x2').value = '(' + '-' + b + "" + ' -' + Math.sqrt(im) + 'i' + ')' + '/' + div;
+            } else {
+                document.getElementById('x1').value = x1;
+                document.getElementById('x2').value = x2;
+            }
+        }
+        document.getElementById('back').addEventListener("click", function() {
+            history.back();
+        });
+    </script>
+    <script>
+        function reset() {
+            document.getElementById('x1').value = " ";
+            document.getElementById('x2').value = " ";
+        }
+
+        function resetInput() {
+            document.getElementById('a').value = " ";
+            document.getElementById('b').value = " ";
+            document.getElementById('c').value = " ";
+        }
+    </script>
+
+</body>
+
+</html>

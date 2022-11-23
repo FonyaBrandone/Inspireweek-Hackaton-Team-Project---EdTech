@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permutations</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/sections.css">
+    <script src="script/menu-nav.js"></script>
+    <link rel="shortcut icon" href="../assets/wikki.svg">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+    <style>
+        label {
+            background: none;
+            color: goldenrod;
+            text-shadow: 2px 1px 1px brown;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(images/Einstein.jpg); background-size: cover;">
+    <center>
+        <button id="back" style="background-color:rgb(33, 33, 63); color:white;" class="btn mt-4"><i class="bi bi-arrow-left me-1"></i> Back</button>
+    </center>
+
+    <h2>Permutation</h2><br>
+    <p>Permutations usually take the form: <span style="margin-left: 10px; font-size: 27px; color: red;"><span style="font-size: 35px;">n</span>!</span><br>
+    </p>
+    <div class="formDiv">
+        <div name="form">
+            <label>n:</label><input onkeyup="describe()" type="number" name="n" id="n"><br><br><br>
+
+            <button onclick="permutation()">Results</button><br>
+            <label id="desc"></label><input name="ans" id="val" readonly><br><br>
+            <button onclick="reset()" id="reset"></button><br>
+            <button onclick="resetInput()" id="reset2"></button><br>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('val').style.color = "blue";
+        document.getElementById('reset').style.display = "none";
+        document.getElementById('reset2').style.display = "none";
+
+        function permutation() {
+            var n = document.getElementById('n').value;
+            var product = 1;
+            var i = 1;
+            while (i++ < n) {
+                product *= i;
+            }
+            document.getElementById('val').value = product;
+
+            document.getElementById('reset').innerHTML = "Reset Results";
+            document.getElementById('reset2').innerHTML = "Reset Inputs";
+            document.getElementById('reset').style.display = "block";
+            document.getElementById('reset2').style.display = "block";
+
+        }
+
+        document.getElementById('back').addEventListener("click", function() {
+            history.back();
+        });
+
+        function describe() {
+            var n = document.getElementById('n').value;
+            document.getElementById('desc').innerHTML = n + "! is:";
+        }
+    </script>
+    <script>
+        function reset() {
+            document.getElementById('val').value = " ";
+        }
+
+        function resetInput() {
+            document.getElementById('n').value = " ";
+        }
+    </script>
+
+</body>
+
+</html>

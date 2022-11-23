@@ -1,0 +1,92 @@
+/*Calculator style*/
+
+form {
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 610px;
+    background-color: rgb(175, 93, 144);
+    color: black;
+    font-weight: 700;
+}
+
+input[type=button] {
+    border: 2px goldenrod;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: large;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+span {
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    width: 395px;
+}
+
+#screen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 60px;
+    border: 3px solid rgb(251, 241, 241);
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: right;
+    font-size: larger;
+}
+
+#clear-btn {
+    width: 90px;
+    float: left;
+    background-color: rgb(228, 87, 134);
+    margin-right: 0px;
+}
+
+#del-btn {
+    width: 60px;
+    margin-left: 2px;
+    background-color: rgb(226, 163, 85);
+    margin-bottom: 3px;
+}
+
+#clear-btn:hover,
+#del-btn:hover {
+    color: white;
+}
+
+.group {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+#ans:hover {
+    background-color: yellowgreen;
+}
+
+footer {
+    background-color: #0e0d0d;
+    padding: 1px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: larger;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 0px;
+    margin-bottom: -50px;
+}

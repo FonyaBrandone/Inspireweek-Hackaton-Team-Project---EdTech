@@ -1,0 +1,37 @@
+.boders {
+    border-width: 40%;
+    border: 2px 2px whitesmoke;
+    background-color: rgb(252, 187, 66);
+    color: black;
+    margin-top: 7px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 37px;
+    width: 43%;
+    margin-left: 28%;
+    cursor: pointer;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.boders a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.boders a:hover {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px gray;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: -50px;
+    text-align: center;
+}
