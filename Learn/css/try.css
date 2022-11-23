@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    position: static;
+}
+
+body {
+    right: 0;
+    left: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+}
+
+.hh {
+    height: 10vh;
+    position: static;
+}
+
+.left {
+    height: 80vh;
+    margin-left: -30px;
+}
+
+.active {
+    text-decoration: underline;
+    color: rgb(252, 189, 87);
+    text-decoration-color: pink;
+}
